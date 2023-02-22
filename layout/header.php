@@ -32,6 +32,9 @@
             <a class="nav-link" href="contact.php">Contact us</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../crud/create.php">Create Account</a>
+          </li>
+          <li class="nav-item">
           </li>
         </ul>
       </div>
