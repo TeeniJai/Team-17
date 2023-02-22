@@ -29,7 +29,7 @@ if (isset($_POST["submit"])){
     $fname = $_POST['fname'];
     $email= $_POST['email'];
     $address = $_POST['address'];
-    $phone = $_POST['phone'];
+    $phone= $_POST['phone'];
     $accountid = $_POST['accountid'];
     $payment= $_POST['payment'];
 
