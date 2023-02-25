@@ -10,17 +10,20 @@ include '../layout/header.php';
     <input type="text" name="phone " placeholder=" phone" required> <br><br>
 
     <select name="ReservationID">
-        <option value="1"> Salad </option>
-        <option value="2"> Pizza </option>
-        <option value="3"> Pasta </option>
-        <option value="4"> Soup</option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2</option>
+        <option value="3"> 3 </option>
+        <option value="4"> 4</option>
     </select><br><br>
 
 
     <select name="schedule">
-        <option value="BBCAP22"> BBCAP22 </option>
-        <option value="BBCAP21"> BBCAP21 </option>
-        <option value="Others"> Others </option>
+        <option value="Monday"> BBCAP22 </option>
+        <option value="Tuesday"> BBCAP21 </option>
+        <option value="Wednesday"> Others </option>
+        <option value="Thursday"> Others </option>
+        <option value="Friday"> Others </option>
+        <option value="Weekend"> Others </option>
     </select><br><br>
     
     <input type="submit" value="Submit" name="submit">

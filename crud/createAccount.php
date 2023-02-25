@@ -11,8 +11,8 @@ include '../layout/header.php';
    
 
     <select name="accountid">
-        <option value="BBCAP22"> BBCAP22 </option>
-        <option value="BBCAP21"> BBCAP21 </option>
+        <option value="BBCAP22"> 8080 </option>
+        <option value="BBCAP21"> 8081 </option>
         <option value="Others"> Others </option>
     </select><br><br>
     <select name="payment ">
