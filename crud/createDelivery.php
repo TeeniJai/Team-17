@@ -5,17 +5,23 @@ include '../layout/header.php';
 
 <form method="post" action="" onsubmit="return  crud()" name="form1">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
-    <input type="text" name="email" placeholder="Email" required> <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
-    <input type="text" name="phone " placeholder="Phone " required> <br><br>
-   
+    <input type="text" name="phone " placeholder=" phone" required> <br><br>
 
-    <select name="accountid">
+    <select name="orderID">
+        <option value="Order1"> Salad </option>
+        <option value="Order2"> Pizza </option>
+        <option value="Order3"> Pasta </option>
+        <option value="Order4"> Soup</option>
+    </select><br><br>
+
+
+    <select name="DeliveryID">
         <option value="BBCAP22"> BBCAP22 </option>
         <option value="BBCAP21"> BBCAP21 </option>
         <option value="Others"> Others </option>
     </select><br><br>
-    <select name="payment ">
+    <select name=" payment">
         <option value="cash"> Cash </option>
         <option value="card"> Card </option>
        
@@ -27,15 +33,15 @@ include '../layout/header.php';
 <?php
 if (isset($_POST["submit"])){
     $fname = $_POST['fname'];
-    $email = $_POST['email'];
     $address = $_POST['address'];
     $phone= $_POST['phone'];
-    $accountid = $_POST['accountid'];
+    $orderID = $_POST['orderID'];
+    $DeliveryID= $_POST['DeliveryID'];
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into account table (fname, email, address, phone,accountid,payment)
-    values('$fname', '$email', '$address', '$phone' ,  '$accountid' , '$payment'  )";
+    $sql = "insert into Delivery table (fname, address,phone ,orderid,deliveryid,payment)
+    values('$fname', '$address', '$phone' ,  '$orderID' ,'$DeliveryID', '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){
         echo "Your information is added successfully";

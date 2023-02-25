@@ -35,12 +35,24 @@
             <a class="nav-link active" aria-current="page" href="../crud/create.php">Create Account</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../crud/createDelivery.php">Delivery</a>
+          </li>
+
+
+
+          
+      
+          <li class="nav-item">
           </li>
         </ul>
       </div>
-      <a>
-        <div class="reservation-button d-flex justify-content-center">Reservation</div>
-      </a>
+      
+      
+        <a class="reservation-button d-flex justify-content-center"aria-current="page" href="../crud/createReservation.php"> Reservation</a>
+
+        
+        
+      
     </div>
   </nav>
  

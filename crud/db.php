@@ -1,5 +1,5 @@
 <?php
-$servername ="db";
+$servername ="db-1";
 $username ="capp2";
 $password ="group17";
 $dbname ="capp2";
