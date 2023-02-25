@@ -32,7 +32,7 @@
             <a class="nav-link" href="contact.php">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../crud/create.php">Create Account</a>
+            <a class="nav-link active" aria-current="page" href="../crud/createAccount.php">Create Account</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="../crud/createDelivery.php">Delivery</a>
@@ -48,9 +48,9 @@
       </div>
       
       
-        <a class="reservation-button d-flex justify-content-center"aria-current="page" href="../crud/createReservation.php"> Reservation</a>
+        <a class=" reservation-button d-flex justify-content-center"aria-current="page" href="../crud/createReservation.php"> Reservation</a>
 
-        
+         
         
       
     </div>
