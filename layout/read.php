@@ -1,7 +1,7 @@
 <?php
 $title ="Reading Data from thhe database";
 include '../layout/header.php';
-include 'db-1.php';
+include 'db.php';
 $sql = "select * from account table";
 $result = $conn->query($sql);
 if($result->num_rows > 0){

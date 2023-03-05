@@ -7,7 +7,7 @@ include '../layout/header.php';
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="email" placeholder="Email" required> <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
-    <input type="text" name="phone " placeholder="Phone " required> <br><br>
+    <input type="text" name="phone" placeholder="Phone" required> <br><br>
    
 
     <select name="accountid">
@@ -15,7 +15,7 @@ include '../layout/header.php';
         <option value="BBCAP21"> 8081 </option>
         <option value="Others"> Others </option>
     </select><br><br>
-    <select name="payment ">
+    <select name="payment">
         <option value="cash"> Cash </option>
         <option value="card"> Card </option>
        
