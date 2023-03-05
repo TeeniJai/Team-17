@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `account table`
 --
 
-CREATE TABLE `account table` (
+CREATE TABLE `account` (
   `Fname` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `phone` int NOT NULL,
   `address` varchar(60) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `account table` (
 -- Table structure for table `Delivery table`
 --
 
-CREATE TABLE `Delivery table` (
+CREATE TABLE `Delivery` (
   `Fname` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `phone` int NOT NULL,
   `address` varchar(60) NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE `Delivery table` (
 -- Table structure for table `Reservation table`
 --
 
-CREATE TABLE `Reservation table` (
+CREATE TABLE `Reservation` (
   `Fname` varchar(60) NOT NULL,
   `phone` int NOT NULL,
   `address` varchar(60) NOT NULL,
@@ -74,19 +74,19 @@ CREATE TABLE `Reservation table` (
 --
 -- Indexes for table `account table`
 --
-ALTER TABLE `account table`
+ALTER TABLE `account`
   ADD PRIMARY KEY (`phone`);
 
 --
 -- Indexes for table `Delivery table`
 --
-ALTER TABLE `Delivery table`
+ALTER TABLE `Delivery`
   ADD PRIMARY KEY (`phone`);
 
 --
 -- Indexes for table `Reservation table`
 --
-ALTER TABLE `Reservation table`
+ALTER TABLE `Reservation`
   ADD PRIMARY KEY (`phone`);
 
 --
@@ -96,19 +96,19 @@ ALTER TABLE `Reservation table`
 --
 -- AUTO_INCREMENT for table `account table`
 --
-ALTER TABLE `account table`
+ALTER TABLE `account`
   MODIFY `phone` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `Delivery table`
 --
-ALTER TABLE `Delivery table`
+ALTER TABLE `Delivery`
   MODIFY `phone` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `Reservation table`
 --
-ALTER TABLE `Reservation table`
+ALTER TABLE `Reservation`
   MODIFY `phone` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 

@@ -1,10 +1,9 @@
 <?php
 $title = "Update your info";
 include '../layout/header.php';
-$a = $_GET['id'];
+$a = $_GET['accountID'];
 include 'db.php';
-$result = mysqli_query($conn,"select * from account table 
-where id= '$a'");
+$result = mysqli_query($conn,"select * from account where id= '$a'");
 $row =mysqli_fetch_array($result);
 ?>
  <h2>Update your information below </h2>
