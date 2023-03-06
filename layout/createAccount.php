@@ -1,9 +1,9 @@
 <?php
-$title = "A simle CRUD app";
+$title = "Create your account";
 include '../layout/header.php';
 ?>
 
-<form method="post" action="" onsubmit="return  crud()" name="form1">
+<form method="post" action="" onsubmit="return  accountVal()" name="form1">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="email" placeholder="Email" required> <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>

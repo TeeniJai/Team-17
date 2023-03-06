@@ -1,9 +1,9 @@
 <?php
-$title = "A simle CRUD app";
+$title = "Delivery form";
 include '../layout/header.php';
 ?>
 
-<form method="post" action="" onsubmit="return  crud()" name="form1">
+<form method="post" action="" onsubmit="return  deliveryVal()" name="form2">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
     <input type="text" name="phone" placeholder="phone" required> <br><br>
@@ -16,7 +16,7 @@ include '../layout/header.php';
     </select><br><br>
 
 
-    <select name=" payment">
+    <select name="payment">
         <option value="cash"> Cash </option>
         <option value="card"> Card </option>
        
