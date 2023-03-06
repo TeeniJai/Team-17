@@ -1,12 +1,11 @@
-/*zahra hamidi Database*/
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Feb 21, 2023 at 07:21 PM
--- Server version: 8.0.32
--- PHP Version: 8.1.15
+-- Generation Time: Mar 06, 2023 at 05:49 PM
+-- Server version: 8.0.30
+-- PHP Version: 8.0.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -19,97 +18,94 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `capp 2`
+-- Database: `capp2`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `account table`
+-- Table structure for table `account`
 --
 
 CREATE TABLE `account` (
   `Fname` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `phone` int NOT NULL,
+  `phone` varchar(15) NOT NULL,
   `address` varchar(60) NOT NULL,
   `email` varchar(60) NOT NULL,
   `accountID` int NOT NULL,
   `payment` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `Delivery table`
+-- Table structure for table `Delivery`
 --
 
 CREATE TABLE `Delivery` (
   `Fname` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `phone` int NOT NULL,
+  `phone` varchar(15) NOT NULL,
   `address` varchar(60) NOT NULL,
   `DeliveryID` int NOT NULL,
   `orderID` int NOT NULL,
   `payment` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `Reservation table`
---
 
 CREATE TABLE `Reservation` (
   `Fname` varchar(60) NOT NULL,
-  `phone` int NOT NULL,
+  `phone` varchar(15) NOT NULL,
   `address` varchar(60) NOT NULL,
   `email` varchar(60) NOT NULL,
   `ReservationID` int NOT NULL,
-  `schedule` datetime NOT NULL
+  `schedule` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `account table`
+-- Indexes for table `account`
 --
 ALTER TABLE `account`
-  ADD PRIMARY KEY (`phone`);
+  ADD PRIMARY KEY (`accountID`);
 
 --
--- Indexes for table `Delivery table`
+-- Indexes for table `Delivery`
 --
 ALTER TABLE `Delivery`
-  ADD PRIMARY KEY (`phone`);
+  ADD PRIMARY KEY (`DeliveryID`);
 
 --
--- Indexes for table `Reservation table`
+-- Indexes for table `Reservation`
 --
 ALTER TABLE `Reservation`
-  ADD PRIMARY KEY (`phone`);
+  ADD PRIMARY KEY (`ReservationID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `account table`
+-- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
-  MODIFY `phone` int NOT NULL AUTO_INCREMENT;
+  MODIFY `accountID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `Delivery table`
+-- AUTO_INCREMENT for table `Delivery`
 --
 ALTER TABLE `Delivery`
-  MODIFY `phone` int NOT NULL AUTO_INCREMENT;
+  MODIFY `DeliveryID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `Reservation table`
+-- AUTO_INCREMENT for table `Reservation`
 --
 ALTER TABLE `Reservation`
-  MODIFY `phone` int NOT NULL AUTO_INCREMENT;
+  MODIFY `ReservationID` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
