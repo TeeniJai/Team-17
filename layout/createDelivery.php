@@ -8,6 +8,8 @@ include '../layout/header.php';
     <input type="text" name="address" placeholder="Address" required> <br><br>
     <input type="text" name="phone" placeholder="phone" required> <br><br>
 
+ 
+
     <select name="orderID">
         <option value="1"> Salad </option>
         <option value="2"> Pizza </option>
@@ -34,7 +36,7 @@ if (isset($_POST["submit"])){
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into Delivery (fname, address,phone ,orderid,payment)
+    $sql = "insert into Delivery(fname, address,phone ,orderid,payment)
     values('$fname', '$address', '$phone' ,  '$orderID' , '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){

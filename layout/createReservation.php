@@ -34,7 +34,7 @@ if (isset($_POST["submit"])) {
     $email = $_POST['email'];
 
     include 'db.php';
-    $sql = "insert into Reservation (fname, address, phone, schedule, email)
+    $sql = "insert into Reservation(fname, address, phone, schedule, email)
     values('$fname', '$address', '$phone','$schedule','$email')";
 
     if ($conn->query($sql) === TRUE) {
