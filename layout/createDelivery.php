@@ -6,11 +6,9 @@ include '../layout/header.php';
 <form method="post" action="" onsubmit="return  crud()" name="form1">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
-<<<<<<< Updated upstream
     <input type="text" name="phone" placeholder="phone" required> <br><br>
-=======
-    <input type="text" name="phone" placeholder="Phone" required> <br><br>
->>>>>>> Stashed changes
+
+ 
 
     <select name="orderID">
         <option value="1"> Salad </option>
@@ -38,7 +36,7 @@ if (isset($_POST["submit"])){
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into Delivery (fname, address,phone ,orderid,payment)
+    $sql = "insert into Delivery(fname, address,phone ,orderid,payment)
     values('$fname', '$address', '$phone' ,  '$orderID' , '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){

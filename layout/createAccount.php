@@ -28,7 +28,7 @@ if (isset($_POST["submit"])){
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into account (fname, email, address, phone,payment)
+    $sql = "insert into account(fname, email, address, phone,payment)
     values('$fname', '$email', '$address', '$phone' , '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){
