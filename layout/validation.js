@@ -40,7 +40,6 @@ function deliveryVal() {
     }
 }
 function reservationVal() {
-    alert("wweeeeeeeeeeeeeeeeeeeeeee");
     let fname = (document.form3.fname.value).trim();
     let email = (document.form3.email.value).trim();
     let address = (document.form3.address.value).trim();
