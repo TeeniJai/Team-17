@@ -1,27 +1,24 @@
 <?php
-$title = "A simle CRUD app";
+$title = "Delivery form";
 include '../layout/header.php';
 ?>
 
-<form method="post" action="" onsubmit="return  crud()" name="form1">
+<form method="post" action="" onsubmit="return  deliveryVal()" name="form2">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
-    <input type="text" name="phone " placeholder=" phone" required> <br><br>
+    <input type="text" name="phone" placeholder="phone" required> <br><br>
+
+ 
 
     <select name="orderID">
-        <option value="Order1"> Salad </option>
-        <option value="Order2"> Pizza </option>
-        <option value="Order3"> Pasta </option>
-        <option value="Order4"> Soup</option>
+        <option value="1"> Salad </option>
+        <option value="2"> Pizza </option>
+        <option value="3"> Pasta </option>
+        <option value="4"> Soup</option>
     </select><br><br>
 
 
-    <select name="DeliveryID">
-        <option value="BBCAP22"> BBCAP22 </option>
-        <option value="BBCAP21"> BBCAP21 </option>
-        <option value="Others"> Others </option>
-    </select><br><br>
-    <select name=" payment">
+    <select name="payment">
         <option value="cash"> Cash </option>
         <option value="card"> Card </option>
        
@@ -36,12 +33,11 @@ if (isset($_POST["submit"])){
     $address = $_POST['address'];
     $phone= $_POST['phone'];
     $orderID = $_POST['orderID'];
-    $DeliveryID= $_POST['DeliveryID'];
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into Delivery table (fname, address,phone ,orderid,deliveryid,payment)
-    values('$fname', '$address', '$phone' ,  '$orderID' ,'$DeliveryID', '$payment'  )";
+    $sql = "insert into Delivery(fname, address,phone ,orderid,payment)
+    values('$fname', '$address', '$phone' ,  '$orderID' , '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){
         echo "Your information is added successfully";

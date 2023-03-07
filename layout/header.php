@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link href="style.css" rel="stylesheet">
+  <script src="validation.js"></script>
   <title>Document</title>
 </head>
 
@@ -32,10 +33,10 @@
             <a class="nav-link" href="contact.php">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../crud/create.php">Create Account</a>
+            <a class="nav-link active" aria-current="page" href="../layout/createAccount.php">Create Account</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../crud/createDelivery.php">Delivery</a>
+            <a class="nav-link active" aria-current="page" href="../layout/createDelivery.php">Delivery</a>
           </li>
 
 
@@ -48,9 +49,9 @@
       </div>
       
       
-        <a class="reservation-button d-flex justify-content-center"aria-current="page" href="../crud/createReservation.php"> Reservation</a>
+        <a class=" reservation-button d-flex justify-content-center"aria-current="page" href="../layout/createReservation.php"> Reservation</a>
 
-        
+         
         
       
     </div>

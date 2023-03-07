@@ -1,21 +1,16 @@
 <?php
-$title = "A simle CRUD app";
+$title = "Create your account";
 include '../layout/header.php';
 ?>
 
-<form method="post" action="" onsubmit="return  crud()" name="form1">
+<form method="post" action="" onsubmit="return  accountVal()" name="form1">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="email" placeholder="Email" required> <br><br>
     <input type="text" name="address" placeholder="Address" required> <br><br>
-    <input type="text" name="phone " placeholder="Phone " required> <br><br>
+    <input type="text" name="phone" placeholder="Phone" required> <br><br>
    
 
-    <select name="accountid">
-        <option value="BBCAP22"> 8080 </option>
-        <option value="BBCAP21"> 8081 </option>
-        <option value="Others"> Others </option>
-    </select><br><br>
-    <select name="payment ">
+    <select name="payment">
         <option value="cash"> Cash </option>
         <option value="card"> Card </option>
        
@@ -30,12 +25,11 @@ if (isset($_POST["submit"])){
     $email = $_POST['email'];
     $address = $_POST['address'];
     $phone= $_POST['phone'];
-    $accountid = $_POST['accountid'];
     $payment= $_POST['payment'];
 
     include 'db.php';
-    $sql = "insert into account table (fname, email, address, phone,accountid,payment)
-    values('$fname', '$email', '$address', '$phone' ,  '$accountid' , '$payment'  )";
+    $sql = "insert into account(fname, email, address, phone,payment)
+    values('$fname', '$email', '$address', '$phone' , '$payment'  )";
 
     if ($conn ->query($sql) === TRUE){
         echo "Your information is added successfully";

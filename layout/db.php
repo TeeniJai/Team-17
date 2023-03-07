@@ -1,8 +1,8 @@
 <?php
-$servername ="db-1";
-$username ="capp2";
+$servername ="db";
+$username ="capp 2";
 $password ="group17";
-$dbname ="capp2";
+$dbname ="capp 2";
 // creating connection
 $conn = new mysqli ($servername,$username,$password,$dbname);
 
