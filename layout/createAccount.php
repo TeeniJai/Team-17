@@ -3,6 +3,7 @@ $title = "Create your account";
 include '../layout/header.php';
 ?>
 
+<h3>Log in</h3>
 <form method="post" action="" onsubmit="return  accountVal()" name="form1">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
     <input type="text" name="email" placeholder="Email" required> <br><br>

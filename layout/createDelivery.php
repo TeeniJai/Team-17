@@ -2,6 +2,7 @@
 $title = "Delivery form";
 include '../layout/header.php';
 ?>
+<h3>Order Delivery</h3>
 
 <form method="post" action="" onsubmit="return  deliveryVal()" name="form2">
     <input type="text" name="fname" placeholder="Full Name" required > <br><br>
